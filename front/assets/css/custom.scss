@@ -1,0 +1,117 @@
+.btn {
+    padding: .75rem 1.5rem;
+    border-radius: 1px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.109);
+    line-height: 120%;
+    color:#fff;
+}
+.btn.db{
+    display: block !important;
+}
+
+.btn_success:hover {
+    color: var(--success-color);
+    background: var(--dark-color);
+    border: 2px solid transparent;
+}
+.icon {
+    span{
+        color: var(--success-color);
+        font-size: 2.3rem;
+    }
+}
+.pad {
+    padding: 3rem 0;
+}
+
+.counter {
+    flex-basis: 33%;
+    .count{
+        color: var(--primary);
+        font-size: clamp(1.5rem,5vw,3rem);
+    }
+}
+.brs-3{
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+}
+.custom_inp {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--primary);
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+    color: var(--ternery);
+}
+.PopUpContent {
+    position: fixed;
+    top: 0;right: 0;
+    left: 0;bottom: 0;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 254, 254, 0.116);
+    backdrop-filter: blur(7px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    .content {
+        width: 100%;
+        max-width: 700px;
+        position: relative;
+        #PopUpClose {
+            position: absolute;
+            display: block;
+            right: 0;
+            top: 0;
+            margin: -2.6rem 0;
+            background: var(--primary);
+            font-size: 1.5rem;
+            box-shadow: 0 8px 24px rgba(50, 205, 153, 0.425);
+            color: var(--ternery);
+            border-radius: 2px;
+            padding: .5rem;
+            cursor: pointer;
+        }
+    }
+    .iframe-container {
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        iframe {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+.PopUpContent.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.color{
+    color: var(--primary);
+    font-weight: 500;
+}
+.quote {
+    display: block;
+    text-align: right;
+    line-height: .5;
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+    font-size: 4rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
