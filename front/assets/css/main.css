@@ -10,7 +10,7 @@ File Info : https://github.com/HunterRaihan/Plexus
 :root {
   --primary: var(--success-color);
   --ternery: var(--light-color);
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.123);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 body {
